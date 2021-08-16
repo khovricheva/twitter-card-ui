@@ -53,7 +53,6 @@
   font-size: 24px;
   text-transform: uppercase;
 }
-.card__action-button_follow {
-}
-.card__action-button_following {
+.active {
+  background-color: #4caf50;
 }
