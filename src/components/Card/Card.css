@@ -1,0 +1,59 @@
+.card {
+  min-width: 480px;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgb(0 0 0 / 50%);
+  border-radius: 25px;
+}
+
+.card__bg {
+  height: 300px;
+  background-image: url('https://picsum.photos/320/200?random=1&blur=2');
+  background-size: cover;
+  border-bottom: 12px solid #5cc0fe;
+}
+
+.card__content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  padding: 75px 0 45px;
+  background-color: #dde1e2;
+}
+
+.card__user-logo {
+  position: absolute;
+  bottom: 214px;
+  width: 105px;
+  height: 105px;
+  background-image: url('https://randomuser.me/api/portraits/lego/1.jpg');
+  background-size: cover;
+  border: 12px solid #5cc0fe;
+  border-radius: 50%;
+}
+.card__user-info {
+  display: flex;
+  justify-content: space-around;
+  min-width: 87%;
+  font-size: 24px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  color: #8b878b;
+}
+.card__action-button {
+  margin-top: 30px;
+  padding: 15px 35px;
+  outline: none;
+  border: none;
+  border-radius: 7px;
+  background-color: #2589cc;
+  color: #effefe;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+.card__action-button_follow {
+}
+.card__action-button_following {
+}
