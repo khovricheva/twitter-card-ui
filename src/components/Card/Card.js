@@ -27,7 +27,7 @@ function Card() {
           </div>
         </div>
         <button
-          className={`card__action-button ${isFollowing ? 'active' : ''}`}
+          className={`card__action-button ${isFollowing ? 'following' : ''}`}
           onClick={handleFollow}
         >
           {isFollowing ? 'Following' : 'Follow'}

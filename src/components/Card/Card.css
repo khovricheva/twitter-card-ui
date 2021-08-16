@@ -1,12 +1,12 @@
 .card {
-  min-width: 480px;
   overflow: hidden;
   box-shadow: 0 0 15px rgb(0 0 0 / 50%);
   border-radius: 25px;
 }
 
 .card__bg {
-  height: 300px;
+  width: 30rem;
+  height: 18.75rem;
   background-image: url('https://picsum.photos/320/200?random=1&blur=2');
   background-size: cover;
   border-bottom: 12px solid #5cc0fe;
@@ -24,8 +24,8 @@
 .card__user-logo {
   position: absolute;
   bottom: 214px;
-  width: 105px;
-  height: 105px;
+  width: 6.5rem;
+  height: 6.5rem;
   background-image: url('https://randomuser.me/api/portraits/lego/1.jpg');
   background-size: cover;
   border: 12px solid #5cc0fe;
@@ -35,7 +35,6 @@
   display: flex;
   justify-content: space-around;
   min-width: 87%;
-  font-size: 24px;
   font-weight: 600;
   text-transform: uppercase;
   text-align: center;
@@ -50,9 +49,26 @@
   background-color: #2589cc;
   color: #effefe;
   font-family: 'Montserrat', sans-serif;
-  font-size: 24px;
+  font-size: 1.5rem;
   text-transform: uppercase;
+  transition: all 0.5s linear;
 }
-.active {
+.following {
   background-color: #4caf50;
+}
+
+@media (max-width: 520px) {
+  .card__bg {
+    width: 90vw;
+    height: 40vh;
+  }
+}
+
+@media (max-width: 400px) {
+  .card__user-logo {
+    bottom: 185px;
+  }
+  .card__action-button {
+    font-size: 1rem;
+  }
 }
